@@ -22,8 +22,10 @@ genfscon sysfs /devices/platform/extcon_usb1                                    
 genfscon proc /gesture_function                                                                     u:object_r:proc_gesture_function:s0
 genfscon proc /gesture_state                                                              u:object_r:proc_gesture_state:s0
 
+# Graphics
+genfscon sysfs /devices/platform/soc/13000000.mali u:object_r:sysfs_gpu:s0
+
 # Label wakeup nodes
-genfscon sysfs /devices/platform/1a000000.camisp_legacy/wakeup                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/extcon_usb/wakeup                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/wakeup                                  u:object_r:sysfs_wakeup:s0

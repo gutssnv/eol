@@ -383,6 +383,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.transsion
 
+# vndservice
+PRODUCT_PACKAGES += \
+   vndservicemanager
+    
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \

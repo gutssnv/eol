@@ -374,6 +374,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libbinder-v31 \
     libhidlbase-v31 \
     libstagefright_foundation-v33 \

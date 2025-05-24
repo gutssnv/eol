@@ -20,6 +20,7 @@ ro.vendor.mtk.bt_sap_enable=true
 vendor.bluetooth.ldac.abr=true
 
 # Display
+ro.surface_flinger.uclamp.min=130
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
 ro.hardware.egl=meow

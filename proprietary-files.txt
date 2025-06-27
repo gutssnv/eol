@@ -228,7 +228,7 @@ vendor/lib64/libtrancamJsonConvertor.so
 vendor/lib64/libtrancam_filelockmgr.so
 vendor/lib64/libTranVideoFilter.so
 vendor/lib64/libTranVideoLuminousEffects.so
-vendor/lib64/libvideofilmeffect.so
+vendor/lib64/libvideofilmeffect.so;DISABLE_CHECKELF
 vendor/lib64/libvideofilter_cl_64.so
 vendor/lib64/libVkLayer_mtk_rt_sdk.so
 vendor/lib64/libCamera_gc08a8mipiraw_B612_Preview.so
@@ -736,7 +736,7 @@ vendor/lib64/mt6789/libmsnr.so;SYMLINK=vendor/lib64/libmsnr.so
 vendor/lib64/mt6789/libNvLutEffect.so;SYMLINK=vendor/lib64/libNvLutEffect.so
 vendor/lib64/mt6789/libportrait_repair_ppl3_ocl.so;SYMLINK=vendor/lib64/libportrait_repair_ppl3_ocl.so
 vendor/lib64/mt6789/librmsclib1.so;SYMLINK=vendor/lib64/librmsclib1.so
-vendor/lib64/mt6789/libsegmention.so;SYMLINK=vendor/lib64/libsegmention.so
+vendor/lib64/mt6789/libsegmention.so;SYMLINK=vendor/lib64/libsegmention.so;DISABLE_CHECKELF
 vendor/lib64/mt6789/libsegmentionPre.so;SYMLINK=vendor/lib64/libsegmentionPre.so
 vendor/lib64/mt6789/libsmartdetector.so;SYMLINK=vendor/lib64/libsmartdetector.so
 vendor/lib64/mt6789/libst_mobile.so;SYMLINK=vendor/lib64/libst_mobile.so
@@ -1080,7 +1080,7 @@ vendor/lib64/mt6789/libmtkcam_imem.so;SYMLINK=vendor/lib64/libmtkcam_imem.so
 vendor/lib64/mt6789/libmtkcam_imgbuf.so;SYMLINK=vendor/lib64/libmtkcam_imgbuf.so
 vendor/lib64/mt6789/libmtkcam_mapping_mgr.so;SYMLINK=vendor/lib64/libmtkcam_mapping_mgr.so
 vendor/lib64/mt6789/libmtkcam_metadata.so;SYMLINK=vendor/lib64/libmtkcam_metadata.so
-vendor/lib64/mt6789/libmtkcam_metastore.so;SYMLINK=vendor/lib64/libmtkcam_metastore.so|5100e9c491076d4d3362682223ec951aa59b95a9
+vendor/lib64/mt6789/libmtkcam_metastore.so;SYMLINK=vendor/lib64/libmtkcam_metastore.so
 vendor/lib64/mt6789/libmtkcam_mfb.so;SYMLINK=vendor/lib64/libmtkcam_mfb.so
 vendor/lib64/mt6789/libmtkcam_modulefactory_aaa.so;SYMLINK=vendor/lib64/libmtkcam_modulefactory_aaa.so
 vendor/lib64/mt6789/libmtkcam_modulefactory_custom.so;SYMLINK=vendor/lib64/libmtkcam_modulefactory_custom.so
@@ -1611,10 +1611,10 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
 # Media (Common)
-vendor/lib/AVCSecureVdecCA_510.so
-vendor/lib/HEVCSecureVdecCA_510.so
-vendor/lib/VP9SecureVdecCA_510.so
-vendor/lib/libAVCSecureVencCA_510.so
+vendor/lib/AVCSecureVdecCA_510.so;DISABLE_CHECKELF
+vendor/lib/HEVCSecureVdecCA_510.so;DISABLE_CHECKELF
+vendor/lib/VP9SecureVdecCA_510.so;DISABLE_CHECKELF
+vendor/lib/libAVCSecureVencCA_510.so;DISABLE_CHECKELF
 vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libh264dec_customize.so
@@ -1693,7 +1693,7 @@ vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
-vendor/lib64/libneuron_platform.so
+vendor/lib64/libneuron_platform.so:;DISABLE_CHECKELF
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
@@ -1880,6 +1880,7 @@ vendor/bin/mcDriverDaemon
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
+vendor/lib/libTEECommon.so;DISABLE_CHECKELF
 vendor/lib/libgz_gp_client.so;DISABLE_CHECKELF
 vendor/lib/libgz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libTEECommon.so

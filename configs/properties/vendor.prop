@@ -58,6 +58,9 @@ ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 
+# Gatekeeper
+ro.hardware.gatekeeper=trustonic
+
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true

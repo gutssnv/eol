@@ -152,6 +152,12 @@ vendor/etc/audio_param/VoWMicSetting_ParamUnitDesc.xml
 vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml
 vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml
 
+# Bluetooth
+vendor/etc/init/init.bt_drv.rc
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbt-vendor.so
+
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader

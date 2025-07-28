@@ -95,6 +95,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
     android.hardware.boot-service.default_recovery:64
+<<<<<<< HEAD
+=======
+
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0.vendor:64 \
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.6.vendor:64
+
+PRODUCT_PACKAGES += \
+    libcamera_metadata_shim \
+    libdng_sdk.vendor        
+>>>>>>> 3aff3498 (LH7n: Use libcamera_metadata_shim for unlocking cameras)
     
 # Cgroup
 PRODUCT_COPY_FILES += \

@@ -92,6 +92,7 @@ ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 debug.sf.enable_egl_image_tracker=0
+debug.sf.treat_170m_as_sRGB=1
 
 # DRM
 drm.service.enabled=true

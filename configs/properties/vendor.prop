@@ -155,6 +155,7 @@ ro.vendor.mgk_name=mgk_64_entry_level_k510
 ro.vendor.mtk_prefer_64bit_proc=0
 
 # Media
+debug.stagefright.c2inputsurface=-1
 debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
 ro.vendor.jpeg_decode_sw_opt=1

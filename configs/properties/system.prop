@@ -24,5 +24,8 @@ debug.stagefright.c2inputsurface=-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.mtk_thumbnail_optimization=true
 
+# Radio
+persist.sys.radio.force_lte_ca=true
+
 # Zygote
 zygote.critical_window.minute=10

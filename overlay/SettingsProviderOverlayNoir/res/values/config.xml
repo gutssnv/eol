@@ -13,5 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License. -->
 <resources>
-
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string name="def_device_name_simple">Noir Stigma</string>
 </resources>

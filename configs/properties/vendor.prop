@@ -180,6 +180,7 @@ ro.vendor.mgk_name=mgk_64_entry_level_k510
 ro.vendor.mtk_prefer_64bit_proc=0
 
 # Media
+media.c2.hal.selection=aidl
 debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072

@@ -307,8 +307,10 @@ PRODUCT_PACKAGES += \
     SettingsOverlayNoir \
     SettingsProviderOverlayNoir \
     SystemUIOverlayNoir \
-    TetheringConfigNoir \
     WifiOverlayNoir
+
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \

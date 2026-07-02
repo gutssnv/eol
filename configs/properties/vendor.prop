@@ -307,6 +307,9 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=-10933333
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
 
+# USB
+vendor.usb.controller=musb-hdrc
+
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0

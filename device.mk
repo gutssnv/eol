@@ -501,10 +501,10 @@ PRODUCT_PACKAGES += \
    vndservice
 
 # Wi-Fi
+$(call soong_config_set_bool,mediatek_wifi_hal,use_pre_u_qpr2_struct,true)
 PRODUCT_PACKAGES += \
     libwifi-hal-wrapper:64 \
     wpa_supplicant \
-    lib_driver_cmd_mt66xx \
     hostapd \
     android.hardware.wifi-service \
     libkeystore-wifi-hidl:64 \

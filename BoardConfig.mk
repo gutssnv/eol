@@ -5,6 +5,7 @@
 
 DEVICE_PATH := device/infinix/X6882
 KERNEL_PATH := $(DEVICE_PATH)-kernel
+CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Architecture
 TARGET_ARCH := arm64
@@ -155,6 +156,11 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
 # VNDK
 BOARD_VNDK_VERSION := current
+
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
 
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers

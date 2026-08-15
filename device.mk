@@ -9,6 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayNoir \
+    SettingsOverlayNoir \
+    SettingsProviderOverlayNoir \
+    SystemUIOverlayNoir \
+    TetheringConfigNoir \
+    WifiOverlayNoir
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 

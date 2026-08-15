@@ -6,6 +6,7 @@ persist.vendor.audiohal.p2w_dump_on=0
 persist.vendor.audiohal.pcm_mixer_dump_on=0
 persist.vendor.rm.debug.headsetmic=1
 persist.vendor.rm.debug.phonemic=1
+ro.config.vc_call_vol_steps=11
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
@@ -62,6 +63,34 @@ ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
+
+# Camera
+camera.disable_zsl_mode=1
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
+persist.vendor.camera3.pipeline.bufnum.base.imgo=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
+persist.vendor.camera3.pipeline.bufnum.base.rrzo=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
+persist.vendor.camera3.pipeline.bufnum.base.lcso=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
+persist.vendor.camera3.pipeline.bufnum.base.rsso=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
+ro.vendor.camera.isp.support.colorspace=0
+ro.vendor.camera3.zsl.default=260
+ro.vendor.camera_tran_fake_stereo_support=1
+ro.vendor.camera_tran_hal_server_support=1
+ro.vendor.camkit_enabled=1
+ro.vendor.mtk_cam_security_support=0
+ro.vendor.mtk_camera_app_version=3
+ro.vendor.mtk_slow_motion_support=1
+vendor.camera.mdp.dre.enable=0
+vendor.camera.mdp.cz.enable=0
+vendor.mtk.camera.app.fd.video=1
 
 # DRM
 drm.service.enabled=true

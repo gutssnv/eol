@@ -6,12 +6,10 @@ persist.vendor.audiohal.p2w_dump_on=0
 persist.vendor.audiohal.pcm_mixer_dump_on=0
 persist.vendor.rm.debug.headsetmic=1
 persist.vendor.rm.debug.phonemic=1
-ro.config.vc_call_vol_steps=11
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_hifiaudio_support=1
-ro.config.vc_call_vol_steps=11
 
 # Bluetooth
 ro.vendor.bluetooth.a2dp_aac_vbr.is_disabled=true
@@ -65,6 +63,10 @@ ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 
+# DRM
+drm.service.enabled=true
+ro.vendor.mtk_widevine_drm_l1_support=1
+
 # Enable virtual A/B compression
 ro.virtual_ab.compression.threads=true
 
@@ -109,6 +111,14 @@ ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# Mediatek
+ro.soc.manufacturer=Mediatek
+ro.vendor.mediatek.platform=MT6789
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V16.49_reallytek.s0mp1rc.k61v1.64.bsp_P31
+ro.vendor.mgk_name=mgk_64_entry_level_k510
+ro.vendor.mtk_prefer_64bit_proc=0
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.md_c2k_cap_dep_check=0
@@ -150,7 +160,7 @@ ro.vendor.mtk.sensor.support=yes
 
 # SoC
 ro.soc.manufacturer=Mediatek
-ro.soc.model=MT6789V/CD
+ro.soc.model=MT6789H
 
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0

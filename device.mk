@@ -327,6 +327,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libbinder-v31 \
+    libhidlbase-v31 \
+    libstagefright_foundation-v33 \
+    libutils-v31
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.transsion

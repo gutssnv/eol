@@ -104,8 +104,17 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.enable_frame_rate_override=false
 debug.graphics.game_default_frame_rate.disabled=true
 
+# Connsys
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsys.dynamic.dump=0
+ro.vendor.connsys.dedicated.log=1
+ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
+vendor.connsys.driver.ready=no
+
 # DRM
 drm.service.enabled=true
+ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_widevine_drm_l1_support=1
 
 # Enable virtual A/B compression

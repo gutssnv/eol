@@ -27,6 +27,7 @@ vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.
 vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6789.so
 vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so;FIX_SONAME
 vendor/lib64/libMtkSpeechEnh.so
+vendor/lib64/libTransNS.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libaudio_param_parser-vnd.so
@@ -1517,7 +1518,7 @@ vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
-vendor/lib/libfgauge_gm30.so
+vendor/lib64/libfgauge_gm30.so
 
 # Gatekeeper
 vendor/lib64/hw/libMcGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.trustonic.so
@@ -1760,10 +1761,6 @@ vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
-vendor/lib/libccci_util.so
-vendor/lib/libmtkcutils.so
-vendor/lib/libmtkproperty.so
-vendor/lib/libmtkrillog.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
@@ -1889,9 +1886,6 @@ vendor/bin/mcDriverDaemon
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
-vendor/lib/libTEECommon.so;DISABLE_CHECKELF
-vendor/lib/libgz_gp_client.so;DISABLE_CHECKELF
-vendor/lib/libgz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so;DISABLE_CHECKELF
 vendor/lib64/libgz_uree.so;DISABLE_CHECKELF

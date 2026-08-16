@@ -41,3 +41,6 @@ vendor.tee.googlekey.status                          u:object_r:vendor_mtk_trust
 
 # VT
 ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
+
+# Fingerprint
+vendor.silead.fp.ext.                            u:object_r:vendor_silead_fp_prop:s0

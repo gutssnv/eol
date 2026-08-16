@@ -1,47 +1,47 @@
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
+persist.vendor.audiohal.aurisys.pcm_dump_on=0
+persist.vendor.audiohal.p2w_dump_on=0
+persist.vendor.audiohal.pcm_mixer_dump_on=0
 persist.vendor.rm.debug.headsetmic=1
 persist.vendor.rm.debug.phonemic=1
+ro.audio.monitorRotation=true
 ro.config.vc_call_vol_steps=11
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_hifiaudio_support=1
-persist.vendor.audiohal.aurisys.pcm_dump_on=0
-persist.vendor.audiohal.p2w_dump_on=0
-persist.vendor.audiohal.pcm_mixer_dump_on=0
-vendor.usbsph.dl.pcm.dump=0
-vendor.usbsph.ul.pcm.dump=0
-vendor.usbsph.srcaws.pcm.dump=0
-vendor.streamout.pcm.dump=0
 vendor.streamin.pcm.dump=0
-ro.audio.monitorRotation=true
+vendor.streamout.pcm.dump=0
+vendor.usbsph.dl.pcm.dump=0
+vendor.usbsph.srcaws.pcm.dump=0
+vendor.usbsph.ul.pcm.dump=0
 
 # Bluetooth
+bluetooth.hci.erroneous_data_reporting.enabled=false
 ro.vendor.bluetooth.a2dp_aac_vbr.is_disabled=true
 ro.vendor.bluetooth.bt_multidevice_perform=600
 ro.vendor.bt.platform=connac1x
 ro.vendor.mtk.bt_sap_enable=true
 vendor.bluetooth.ldac.abr=true
-bluetooth.hci.erroneous_data_reporting.enabled=false
 
 # Camera
 camera.disable_zsl_mode=1
-persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
-persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=7
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
-persist.vendor.camera3.pipeline.bufnum.base.rrzo=4
-persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
 persist.vendor.camera3.pipeline.bufnum.base.lcso=4
-persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
+persist.vendor.camera3.pipeline.bufnum.base.rrzo=4
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=7
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.camera3.zsl.default=260
 ro.vendor.camera_tran_fake_stereo_support=1
@@ -50,23 +50,30 @@ ro.vendor.camkit_enabled=1
 ro.vendor.mtk_cam_security_support=0
 ro.vendor.mtk_camera_app_version=3
 ro.vendor.mtk_slow_motion_support=1
-vendor.camera.mdp.dre.enable=0
 vendor.camera.mdp.cz.enable=0
+vendor.camera.mdp.dre.enable=0
 vendor.mtk.camera.app.fd.video=1
 
 # Display
-ro.surface_flinger.uclamp.min=130
+debug.graphics.game_default_frame_rate.disabled=true
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
+debug.sf.enable_egl_image_tracker=0
+debug.sf.treat_170m_as_sRGB=1
+persist.vendor.sys.mtkaal.function=0
 ro.hardware.egl=meow
-ro.hardware.hwcomposer=mtk_common
 ro.hardware.gralloc=common
+ro.hardware.hwcomposer=mtk_common
 ro.hardware.vulkan=mali
 ro.opengles.version=196610
+ro.surface_flinger.enable_frame_rate_override=false
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.uclamp.min=130
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.vendor.composer_version=2.3
 ro.vendor.mtk_backlight_hwc_support=0
-ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_color_mode=1
+ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_support=2
 ro.vendor.pq.disp_lcm_name_support=0
 ro.vendor.pq.mtk_aal_support=1
@@ -97,20 +104,13 @@ ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
-debug.sf.enable_egl_image_tracker=0
-debug.sf.treat_170m_as_sRGB=1
-ro.surface_flinger.set_display_power_timer_ms=1000
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
-ro.surface_flinger.enable_frame_rate_override=false
-debug.graphics.game_default_frame_rate.disabled=true
-persist.vendor.sys.mtkaal.function=0
 
 # Connsys
 persist.vendor.connsys.chipid=-1
-persist.vendor.connsys.patch.version=-1
 persist.vendor.connsys.dynamic.dump=0
-ro.vendor.connsys.dedicated.log=1
+persist.vendor.connsys.patch.version=-1
 ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
+ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
 # DRM
@@ -134,16 +134,16 @@ ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=1
 
 # HWUI
-debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+debug.hwui.use_hint_manager=true
 
 # IMS
 persist.vendor.mdrsra_v2_support=1
 persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk.volte.enable=1
 persist.vendor.mtk_ct_volte_support=3
 persist.vendor.mtk_dynamic_ims_switch=1
 persist.vendor.mtk_wfc_support=1
-persist.vendor.mtk.volte.enable=1
 persist.vendor.mtk_wfc_support=1
 persist.vendor.viwifi_support=1
 persist.vendor.vonr_setting_support=1
@@ -161,6 +161,7 @@ ro.hardware.kmsetkey=trustonic
 ro.vendor.transsion.backlight_12bit=1
 
 # LMK
+ro.lmk.debug=false
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.psi_complete_stall_ms=150
@@ -168,7 +169,6 @@ ro.lmk.swap_free_low_percentage=20
 ro.lmk.swap_util_max=90
 ro.lmk.thrashing_limit=25
 ro.lmk.thrashing_limit_decay=50
-ro.lmk.debug=false
 
 # Mediatek
 ro.soc.manufacturer=Mediatek
@@ -179,15 +179,15 @@ ro.vendor.mgk_name=mgk_64_entry_level_k510
 ro.vendor.mtk_prefer_64bit_proc=0
 
 # Media
-debug.stagefright.c2inputsurface=-1
 debug.mediatek.disp_decompress=1
+debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
 ro.vendor.jpeg_decode_sw_opt=1
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
-vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.media.omx=0
+vendor.mtk.vdec.waitkeyframeforplay=9
 
 # Misc
 ro.vendor.pref_scale_enable_cfg=1
@@ -260,23 +260,23 @@ ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6789H
 
 # SurfaceFlinger
-ro.surface_flinger.primary_display_orientation=ORIENTATION_0
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=6
-ro.surface_flinger.protected_contents=true
-debug.sf.early.sf.duration=27600000
+debug.sf.auto_latch_unsignaled=0
+debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=20000000
-debug.sf.earlyGl.sf.duration=27600000
+debug.sf.early.sf.duration=27600000
 debug.sf.earlyGl.app.duration=20000000
-debug.sf.hwc.min.duration=23000000
-debug.sf.late.sf.duration=27600000
-debug.sf.late.app.duration=20000000
+debug.sf.earlyGl.sf.duration=27600000
+debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=0
 debug.sf.frame_rate_multiple_threshold=120
-debug.sf.auto_latch_unsignaled=0
-debug.sf.enable_gl_backpressure=0
-debug.sf.disable_client_composition_cache=1
+debug.sf.hwc.min.duration=23000000
+debug.sf.late.app.duration=20000000
+debug.sf.late.sf.duration=27600000
 debug.sf.predict_hwc_composition_strategy=0
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=6
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+ro.surface_flinger.protected_contents=true
 
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=2

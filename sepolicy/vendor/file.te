@@ -3,7 +3,6 @@ type sysfs_tran_cam_file, fs_type, sysfs_type;
 type transsion_camera_data_file, file_type, data_file_type, mlstrustedobject;
 type vendor_watermark_data_file, file_type, data_file_type, mlstrustedobject;
 type vendor_arcsoft_data_file, file_type, data_file_type, mlstrustedobject;
-type vendor_megvii_data_file, file_type, data_file_type, mlstrustedobject;
 
 # Data
 type storage_dbg_data_file, file_type, core_data_file_type, data_file_type;
@@ -31,9 +30,7 @@ type tneengine_tnek_file, dev_type, mlstrustedobject;
 
 # Torch
 type sysfs_sub_torch_file, fs_type, sysfs_type;
-type sysfs_tele_torch_file, fs_type, sysfs_type;
 type sysfs_torch_file, fs_type, sysfs_type;
-type sysfs_wide_torch_file, fs_type, sysfs_type;
 
 # VMAX
 type aw87xxx_vmax, fs_type, sysfs_type;

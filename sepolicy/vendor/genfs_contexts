@@ -4,15 +4,15 @@ genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-006b/power_supply   u:
 genfscon sysfs /devices/platform/odm/odm:tran_auto_test/power_supply         u:object_r:sysfs_batteryinfo:s0
 
 # Devices
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:0/block/sda/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:0/block/sdb/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:0/block/sdc/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:1/block/sda/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:1/block/sdb/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:1/block/sdc/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sda/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sdb/queue         u:object_r:sysfs_devices_block:s0
-genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sdc/queue         u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:0/block/sda/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:0/block/sdb/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:0/block/sdc/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:1/block/sda/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:1/block/sdb/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:1/block/sdc/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sda/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sdb/queue   u:object_r:sysfs_devices_block:s0
+genfscon sysfs /devices/platform/soc/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sdc/queue   u:object_r:sysfs_devices_block:s0
 
 # Extcon
 genfscon sysfs /devices/platform/extcon_usb                                                        u:object_r:sysfs_extcon:s0

@@ -104,6 +104,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v31.so'),
+    'vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so': blob_fixup()
+        .replace_needed('libhidlbase.so', 'libhidlbase-v31.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

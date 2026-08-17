@@ -1,5 +1,7 @@
 # BatteryInfo
-/sys/devices/platform/soc/11017000.i2c/i2c-5/5-006b/power_supply/charger(/.*)?						u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/mtk_ctd/power_supply(/.*)?                                          u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/soc/1101a000\.i2c/i2c-6/6-006b/power_supply(/.*)?                    u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/odm/odm:tran_auto_test/power_supply(/.*)?                            u:object_r:sysfs_batteryinfo:s0
 
 # Camera
 /dev/cml421_ois(/.*)?                                                                   u:object_r:cml421_ois_device:s0
@@ -37,7 +39,6 @@
 
 # Power
 /vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                      u:object_r:hal_power_default_exec:s0
-/sys/devices/platform/soc/11017000.i2c/i2c-5/5-0053/power_supply/charger(/.*)?                     u:object_r:sysfs_batteryinfo:s0
 
 # Sensor stuff
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.sensors-service(\.multihal)?  u:object_r:hal_sensors_default_exec:s0

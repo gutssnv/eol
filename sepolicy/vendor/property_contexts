@@ -39,8 +39,5 @@ persist.vendor.nfc.            u:object_r:vendor_nfc_prop:s0
 # TEE property
 vendor.tee.googlekey.status                          u:object_r:vendor_mtk_trustonic_tee_prop:s0
 
-# VT
-ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
-
 # Fingerprint
 vendor.silead.fp.ext.                            u:object_r:vendor_silead_fp_prop:s0

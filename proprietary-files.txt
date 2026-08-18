@@ -1703,7 +1703,6 @@ vendor/lib64/libmvpuop_mtk_nn.so
 vendor/lib64/libvpu5.so
 
 # Misc
-vendor/etc/init/init.otg.rc
 vendor/lib/libimsg_log.so
 vendor/lib64/libimsg_log.so
 

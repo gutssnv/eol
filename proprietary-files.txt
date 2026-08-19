@@ -1313,6 +1313,7 @@ vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/etc/meow.cfg
 vendor/lib/egl/egl.cfg
 vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so;SYMLINK=vendor/lib/arm.graphics-V1-ndk_platform.so
+vendor/lib/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
 vendor/lib64/hw/hwcomposer.mtk_common.so
 vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
@@ -1321,6 +1322,7 @@ vendor/lib64/mt6789/libaalservice.so;SYMLINK=vendor/lib64/libaalservice.so
 vendor/lib64/mt6789/libaal_cust_func.so;SYMLINK=vendor/lib64/libaal_cust_func.so
 vendor/lib64/mt6789/libaiselector.so;SYMLINK=vendor/lib64/libaiselector.so
 vendor/lib64/mt6789/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib64/mt6789/libpq_cust_base.so;SYMLINK=vendor/lib64/libpq_cust_base.so
 vendor/lib64/mt6789/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/mt6789/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so
@@ -1963,6 +1965,9 @@ vendor/bin/mcDriverDaemon
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
+vendor/lib/libTEECommon.so;DISABLE_CHECKELF
+vendor/lib/libgz_gp_client.so;DISABLE_CHECKELF
+vendor/lib/libgz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so;DISABLE_CHECKELF
 vendor/lib64/libgz_uree.so;DISABLE_CHECKELF
@@ -1993,9 +1998,11 @@ vendor/etc/thermal/thermal_policy_02.conf
 vendor/etc/thermal/thermal_policy_08.conf
 
 # TNE
+vendor/lib/libtneclient.so;DISABLE_CHECKELF
 vendor/lib64/libtneclient.so
 
 # Tranlog
+vendor/lib/libtranlog.so
 vendor/lib64/libtranlog.so
 
 # Wi-Fi
